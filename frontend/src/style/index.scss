@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import '@/style/override.scss';
+
+/* global style */
+
+#root {
+  height: 100%;
+}
+
+.shop-container {
+  height: 100%;
+}
+
+.shop-header {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  border-bottom: 1px solid #eee;
+}
+
+.shop-content {
+  height: calc(100% - 60px);
+  overflow-y: auto;
+}

@@ -1,0 +1,16 @@
+/* override antd components' style */
+.ant-space-item {
+  span {
+    white-space: nowrap;
+  }
+}
+
+/* make tailwind not override antd */
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  &:where(.css-dev-only-do-not-override-1dviw2o).ant-btn-primary {
+    background-color: #c13f3f;
+  }
+}
