@@ -5,7 +5,10 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
-    'plugin:react/recommended',
+    // 'plugin:react/recommended',
+    // the shareable ESLint configuration used by Create React App
+    'react-app',
+    'react-app/jest',
     'plugin:@typescript-eslint/recommended',
     'prettier',
   ],
@@ -15,7 +18,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react', '@typescript-eslint', 'simple-import-sort', 'import'],
+  plugins: [/*'react',*/ '@typescript-eslint', 'simple-import-sort', 'import'],
   rules: {
     'simple-import-sort/exports': 'error',
     'import/first': 'error',

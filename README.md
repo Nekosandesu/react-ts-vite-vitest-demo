@@ -83,6 +83,7 @@ Here's frontend directory layout:
   - Eslint
     - plugins:
       - eslint-plugin-simple-import-sort: to sort import and make it clean
+      - eslint-config-react-app: the shareable ESLint configuration used by Create React App, including the recommended configuration for React as well as eslint-plugin-react-hooks
       - ...
   - Prettier: code format
   - lint-staged & husky: make sure ESLint & prettier auto fix before committing your code
